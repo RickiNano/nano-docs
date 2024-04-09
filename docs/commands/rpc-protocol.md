@@ -1689,6 +1689,34 @@ Derive deterministic keypair from **seed** based on **index**
 
 ---
 
+### election_statistics  
+_version 27.0+_ 
+
+Returns the number of each election type, the maximum and average election age from Active Election Container (AEC).
+
+Values in `max_election_age` and `average_election_age` are in seconds.
+
+**Request:**
+```json
+{
+  "action": "election_statistics"
+}
+```  
+**Response sample:**
+```json
+{
+    "normal": "152",
+    "hinted": "0",
+    "optimistic": "19",
+    "total": "171",
+    "aec_utilization_percentage": "3.42",
+    "max_election_age": "5.49",
+    "average_election_age": "0.52"
+}
+```  
+
+---
+
 ### epoch_upgrade  
 _enable_control required, version 20.0+_ 
 
