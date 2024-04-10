@@ -1694,7 +1694,7 @@ _version 27.0+_
 
 Returns the number of each election type, the maximum and average election age from Active Election Container (AEC).
 
-Values in `max_election_age` and `average_election_age` are in seconds.
+Values in `max_election_age` and `average_election_age` are in milliseconds.
 
 **Request:**
 ```json
@@ -1710,8 +1710,8 @@ Values in `max_election_age` and `average_election_age` are in seconds.
     "optimistic": "19",
     "total": "171",
     "aec_utilization_percentage": "3.42",
-    "max_election_age": "5.49",
-    "average_election_age": "0.52"
+    "max_election_age": "5493",
+    "average_election_age": "421"
 }
 ```  
 
